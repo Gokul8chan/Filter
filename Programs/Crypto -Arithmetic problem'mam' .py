@@ -26,7 +26,8 @@ def main():
     c = input("Enter the third word: ")
     puzzle = [a, b, c]
     solution = solve_cryptarithmetic(puzzle)
-    print(solution)
+    for x,y in solution.items():
+        print(x,"=",y)
 
 if __name__ == "__main__":
     main()
