@@ -1,9 +1,8 @@
 from itertools import permutations
 
-
 def solve_cryptarithmetic(puzzle):
     letters = set("".join(puzzle))
-    print(letters)
+    
     if len(letters) > 10:
         return "Too many letters for unique digit assignment."
 
@@ -21,13 +20,13 @@ def solve_cryptarithmetic(puzzle):
 
 
 def main():
-    print("Example : \n First word + Second word = Third word")
-    a = input("ENter the first word = ")
-    b = input("ENter the second word = ")
-    c = input("ENter the third word = ")
+    print("Example : \nFirst word + Second word = Third word")
+    a = input("Enter the first word: ")
+    b = input("Enter the second word: ")
+    c = input("Enter the third word: ")
     puzzle = [a, b, c]
     solution = solve_cryptarithmetic(puzzle)
     print(solution)
 
-
-main()
+if __name__ == "__main__":
+    main()
